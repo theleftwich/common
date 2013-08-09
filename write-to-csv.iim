@@ -1,0 +1,18 @@
+﻿' generic write to csv macro
+' requires variables data and filename be passed using iimSet in javascript
+
+
+'testing ''''''''''''''''
+'SET data http://www.google.com
+'SET folder c:\\imacro\\mconnex
+'SET filename story-urls
+'''''''''''''''''''''''''''''
+
+
+SET !EXTRACT_TEST_POPUP NO
+
+' get some data from the script
+SET !EXTRACT {{data}}
+
+'write it to csv called [filename].csv
+SAVEAS TYPE=EXTRACT FOLDER={{folder}} FILE={{filename}}.csv

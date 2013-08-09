@@ -1,0 +1,4 @@
+﻿'check in and save
+TAG POS=1 TYPE=SPAN ATTR=TXT:Actions
+TAG POS=1 TYPE=A ATTR=ID:iterate_checkin
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:* ATTR=NAME:form.button.Checkin&&VALUE:Check<SP>in

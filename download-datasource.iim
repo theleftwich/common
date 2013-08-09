@@ -1,0 +1,13 @@
+'''''''''''''''''''''''''''''''''''
+'' download datasource
+'''''''''''''''''''''''''''''''''''
+
+'tell it where to save and give it a file name
+ONDOWNLOAD FOLDER={{datasource_folder}} FILE={{datasource_filename}}.csv WAIT=YES
+
+'start Google Spreadsheet download
+'see https://developers.google.com/google-apps/documents-list/#downloading_a_single_worksheet_from_a_spreadsheet for documentation of how to construct this URL
+'gid=4 indicates sheet number. Note: this key and index are absolute, and will NOT change if sheets are edited deleted.
+URL GOTO=https://spreadsheets.google.com/feeds/download/spreadsheets/Export?key={{key}}&exportFormat=csv&gid={{gid}}
+
+

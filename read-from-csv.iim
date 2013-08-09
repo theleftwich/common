@@ -1,0 +1,7 @@
+'set datasource
+SET !FOLDER_DATASOURCE c:\imacro\mconnex
+SET !DATASOURCE mconnex-automation.csv
+SET !DATASOURCE_COLUMNS 11
+SET !DATASOURCE_LINE {{i}} 
+
+SET !EXTRACT {{!COL2}}
